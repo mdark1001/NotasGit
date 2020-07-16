@@ -38,6 +38,18 @@ Subir cambios locales a *master*
  $ git push -u origin master
 ```
 
+Agregar un origen remoto 
+
+```bash
+$ git remote add origin **url_del_repositorio**
+```
+
+Ver los origenes del reposiotorio 
+
+```bash
+$ git remote -v 
+```
+
 
 
 ### Uso de ramas en git 
