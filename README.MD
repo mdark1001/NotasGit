@@ -6,14 +6,31 @@
 
 ### Comandos de Git
 
-|                      Comando                       | Descripción                                                  | Opciones                                                     |
-| :------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|                   `$ git init `                    | Iniciar un repositorio de git, se crea internamente la carpeta **.git/** |                                                              |
-|                    `$ git add`                     | Agregar archivos  locales y hacer **track** de los archivos, y lo mandamos a **Staggin** | Podemos  agregar un archivo en paricular indicando por nombre del archivo o un **.** (punto) agrega todos los archivos |
-| `$ git commit -m "Mensaje descriptivo del commit"` | Confirma los archivos  una vez agregados (`git add`) y lo mandamos al repositorio **Local. ** |                                                              |
-|                   `$ git status`                   | Revisa el estatus del repositorio, idica si existen cambios sin confirmar, archivos sin tack |                                                              |
-|                    `$ git log`                     | Muestra el historial de cambios del repositorio o de un archivos<br />Por ejemplo `$ git log file.txt` |                                                              |
-|        `$ git diff ID_COMMIT_1 ID_COMMIT_2`        | Muestra las diferencias entre dos commits a partir de la clave generada.<br />Ejemplo: `$ git diff 31c549e32f585b8c9ef1f67496a7522bf8d4b30f 011a7c55eb1aae26002f2c74a1fdba703c0c1e55 ` |                                                              |
-|                                                    |                                                              |                                                              |
-|                                                    |                                                              |                                                              |
+- |                      Comando                       | Descripción                                                  | Opciones                                                     |
+  | :------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  |                   `$ git init `                    | Iniciar un repositorio de git, se crea internamente la carpeta **.git/** |                                                              |
+  |                    `$ git add`                     | Agregar archivos  locales y hacer **track** de los archivos, y lo mandamos a **Staging** | Podemos  agregar un archivo en paricular indicando por nombre del archivo o un **.** (punto) agrega todos los archivos |
+  | `$ git commit -m "Mensaje descriptivo del commit"` | Confirma los archivos  una vez agregados (`git add`) y lo mandamos al repositorio **Local. ** |                                                              |
+  |                   `$ git status`                   | Revisa el estatus del repositorio, idica si existen cambios sin confirmar, archivos sin tack |                                                              |
+  |                    `$ git log`                     | Muestra el historial de cambios del repositorio o de un archivos<br />Por ejemplo `$ git log file.txt` |                                                              |
+  |        `$ git diff ID_COMMIT_1 ID_COMMIT_2`        | Muestra las diferencias entre dos commits a partir de la clave generada.<br />Ejemplo: `$ git diff 31c549e32f585b8c9ef1f67496a7522bf8d4b30f 011a7c55eb1aae26002f2c74a1fdba703c0c1e55 ` |                                                              |
+  |                    `$ git rm `                     | Elimina un archivo del arbol de directorios                  |                                                              |
+  |                `$ git rm --cached`                 | Elimina los archivos del área de *Staging*, lo mantiene en disco local |                                                              |
+  |                 `$ git rm --force`                 | Elimina los archivos de Git y del disco<br />**Nota: Es posible recuperarlo, se mantiene en el historial de cambios** |                                                              |
+  |                   `$ git reset`                    | Permite *viajar en el tiempo, sin la opción de regresar*  <br /> | Este comando es **muy peligroso** y debemos usarlo solo en caso de emergencia. Recuerda que debemos usar alguna de estas dos opciones: <br />`$ git reset --soft`<br />`$ git reset --hard ` |
+
+
+### Comando Git con repositorio remoto
+
+Clonar un repositorio 
+
+`$ git clone **url_del_repositoro**`
+
+Descargar cambios del repositorio,  de *master*
+
+`$ git pull  origin master`
+
+
+
+
 
