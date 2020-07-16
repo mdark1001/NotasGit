@@ -30,7 +30,21 @@ Descargar cambios del repositorio,  de *master*
 
 `$ git pull  origin master`
 
+Subir cambios locales a *master*
 
+` $ git push -u origin master`
+
+
+
+### Uso de ramas en git 
+
+Crear una rama a partir de master:
+
+`$ git branch  otra_rama`
+
+Cambiar a otra  rama 
+
+`$ git checkout otra_rama`
 
 
 
