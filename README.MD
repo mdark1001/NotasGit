@@ -24,7 +24,9 @@
 
 Clonar un repositorio 
 
-`$ git clone **url_del_repositoro**`
+```bash
+$ git clone **url_del_repositorio**
+```
 
 Descargar cambios del repositorio,  de *master*
 
@@ -32,7 +34,9 @@ Descargar cambios del repositorio,  de *master*
 
 Subir cambios locales a *master*
 
-` $ git push -u origin master`
+```bash
+ $ git push -u origin master
+```
 
 
 
@@ -44,7 +48,27 @@ Crear una rama a partir de master:
 
 Cambiar a otra  rama 
 
-`$ git checkout otra_rama`
+```bash
+$ git checkout otra_rama
+```
+
+Uniendo ramas 
+
+```bash
+# Crear un nuevo commit en la rama master combinando
+# los cambios de la rama otra_rama:
+$ git checkout master
+$ git merge otra_rama
+
+# Crear un nuevo commit en la rama otra_rama combinando
+# los cambios de cualquier otra_rama_2:
+$ git checkout otra_rama
+$ git merge otra_rama_2
+```
+
+
+
+
 
 
 
