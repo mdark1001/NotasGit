@@ -124,3 +124,22 @@ $ git tag -d NOMBRE_TAG
 $ git push origin :refs/tags/NOMBRE_TAG
 ```
 
+Crear un **alias** para un comando en git
+
+```bash
+$ git  config --global alias.$NOMBRE_ALIAS "COMANDO QUE SE EJECUTA"
+# POR EJEMPLO, saber el total de commits por usuario sin contar los merges 
+$ git config --global alias.stats "shortlog -sn --no-merges"
+# Después ejecutar como:
+$ git stats
+ 
+```
+
+
+
+Consultar información desde la terminal
+
+```bash
+$ git $COMANDO --help 
+```
+
