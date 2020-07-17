@@ -2,7 +2,11 @@
 
 **Nota:** Recuerda tener instalado git
 
-`$ sudo apt install git-all `
+```bash
+$ sudo apt install git-all
+```
+
+
 
 ### Comandos de Git
 
@@ -22,6 +26,8 @@
 
 ### Comando Git con repositorio remoto
 
+------
+
 Clonar un repositorio 
 
 ```bash
@@ -30,7 +36,9 @@ $ git clone **url_del_repositorio**
 
 Descargar cambios del repositorio,  de *master*
 
-`$ git pull  origin master`
+```bash
+$ git pull  origin master
+```
 
 Subir cambios locales a *master*
 
@@ -54,14 +62,18 @@ $ git remote -v
 
 ### Uso de ramas en git 
 
+------
+
 Crear una rama a partir de master:
 
-`$ git branch  otra_rama`
+```bash
+$ git branch  otra_rama
+```
 
 Cambiar a otra  rama 
 
 ```bash
-$ git checkout otra_rama
+$ git checkout -b otra_rama
 ```
 
 Uniendo ramas 
@@ -80,7 +92,35 @@ $ git merge otra_rama_2
 
 
 
+### Utilidades
 
+------
 
+Mostrar el log en forma gráfica.
 
+```bash
+$ git log --all --graph --decorate --oneline
+```
+
+Crear un **Tag**
+
+```bash
+$ git tag -a v0.1 -m "Mensaje descriptivo de la versión"
+# Enviar a github
+$ git push origin --tags
+```
+
+Ver el listado de tags
+
+```bash
+$ git show-ref --tags
+```
+
+Eliminar un tag
+
+```bash
+$ git tag -d NOMBRE_TAG 
+# Eliminar en github
+$ git push origin :refs/tags/NOMBRE_TAG
+```
 
